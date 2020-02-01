@@ -24,9 +24,9 @@
     </header>
 
     <main>
-     	<h1>Студия Нердс</h1>
+     	<h1 class="visually-hidden">Студия Нердс</h1>
      		<section>
-     			<h2>Товары</h2>
+     			<h2 class="visually-hidden">Товары</h2>
      			<ul>
      				<li>
      					<img src="img/advantage-picture-red.png" width="300px" height="146px" alt="веб-сайты">
@@ -48,17 +48,37 @@
      				</li>
      			</ul>
      		</section>
+     	
+     	<h1 class="visually-hidden">Всплывающее окно</h1>
+     		<form method="post" action="">
+     			<p>Напишите нам</p>
+		      <p>
+		        <label for="user-name">Ваше имя:</label>
+		        <input id="user-name" type="text"
+		               name="name" placeholder="Имя Фамилия">
+		      </p>
+		      <p>
+		        <label for="user-email">Ваш e-mail:</label>
+		        <input id="user-email" type="email" name="email" placeholder="email@example.com">
+		      </p>
+		      <p>
+		        <label for="user-text">Текст письма:</label><br>
+		        <textarea name="comment" id="user-text" rows="5">Текст комментария</textarea>
+		      </p>
+		      <button type="submit">Отправить</button>
+    		</form>	
+
     </main>
     <footer>
     	<ul>
     		<li>
-    			<a href=""><!--<img src="img/vk-icon.svg" width="26px" height="15px" alt="Vk">-->Вконтакте</a>
+    			<a href="" aria-label="Вконтакте"><!--<img src="img/vk-icon.svg" width="26px" height="15px" alt="Vkontake">Вконтакте--></a>
     		</li>
     		<li>
-    			<a href=""><!--<img src="img/fb-icon.svg" width="12px" height="22px" alt="Fb">-->Фейсбук</a>
+    			<a href="" aria-label="Фейсбук"><!--<img src="img/fb-icon.svg" width="12px" height="22px" alt="Facebook">Фейсбук--></a>
     		</li>
     		<li>
-    			<a href=""><!--<img src="img/insta-icon.svg" width="21px" height="21px" alt="Insta">-->Инстаграм</a>
+    			<a href="" aria-label="Инстаграм"><!--<img src="img/insta-icon.svg" width="21px" height="21px" alt="instagram">Инстаграм--></a>
     		</li>
     	</ul>
     	<div><h3>Давайте дружить, это выгодно!</h3>
