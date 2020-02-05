@@ -2,15 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
   	<header>
-  		<nav>
+  		<nav class="main-navigation">
 	        <a>
 	          <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип Нердс">
 	        </a>
-	        <ul>
+	        <ul class="site-navigation">
 	          <li><a href="#">Студия</a></li>
 	          <li><a href="#">Клиенты</a></li>
 	          <li><a href="catalog.html">Магазин</a></li>
@@ -48,26 +50,6 @@
      				</li>
      			</ul>
      		</section>
-     	
-     	<h1 class="visually-hidden">Всплывающее окно</h1>
-     		<form method="post" action="">
-     			<p>Напишите нам</p>
-		      <p>
-		        <label for="user-name">Ваше имя:</label>
-		        <input id="user-name" type="text"
-		               name="name" placeholder="Имя Фамилия">
-		      </p>
-		      <p>
-		        <label for="user-email">Ваш e-mail:</label>
-		        <input id="user-email" type="email" name="email" placeholder="email@example.com">
-		      </p>
-		      <p>
-		        <label for="user-text">Текст письма:</label><br>
-		        <textarea name="comment" id="user-text" rows="5">Текст комментария</textarea>
-		      </p>
-		      <button type="submit">Отправить</button>
-    		</form>	
-
     </main>
     <footer>
     	<ul>
@@ -84,5 +66,23 @@
     	<div><h3>Давайте дружить, это выгодно!</h3>
     		Скидка 10% для друзей из социальных сетей</div>
     </footer>
+
+    <div>
+   		 <p>Напишите нам</p>
+   		 <form action="https://echo.htmlacademy.ru" method="post">
+ 			
+		        <label for="user-name">Ваше имя:</label>
+		        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия"><br>
+		    
+		        <label for="user-email">Ваш e-mail:</label>
+		        <input id="user-email" type="email" name="email" placeholder="email@example.com"><br>
+	     	
+		        <label for="user-text">Текст письма:</label><br>
+		        <textarea name="comment" id="user-text" rows="5" placeholder="текст">Текст комментария</textarea>
+		     
+		</form>	
+    	<button>Отправить</button>
+    </div>
+
   </body>
 </html>
