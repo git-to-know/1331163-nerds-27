@@ -139,14 +139,22 @@
    		 <p>Напишите нам</p>
    		 <form action="https://echo.htmlacademy.ru" method="post">
  			
+		       <input type="image" src="imag/close-cross.svg" alt="close">
+
+		       <div>
 		        <label for="user-name">Ваше имя:</label>
-		        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия"><br>
+		        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+		       </div>
 		    
+		       <div>
 		        <label for="user-email">Ваш e-mail:</label>
-		        <input id="user-email" type="email" name="email" placeholder="email@example.com"><br>
+		        <input id="user-email" type="email" name="email" placeholder="email@example.com">
+		       </div>
 	     	
-		        <label for="user-text">Текст письма:</label><br>
-		        <textarea name="comment" id="user-text" rows="5" placeholder="текст">Текст комментария</textarea>
+	     	   <div>
+		        <label for="user-text">Текст письма:</label>
+		        <textarea name="comment" id="user-text" rows="5" placeholder="В свободной форме">Текст комментария</textarea>
+		       </div>
 		     
 		</form>	
     	<button>Отправить</button>
