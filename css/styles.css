@@ -1,0 +1,184 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/roboto.woff);
+}
+
+body {
+	font-family: roboto, Arial, sans-serif;
+	font-size: 16px;
+	color: #000000;
+	background-color: #ffffff;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none
+}
+
+.main-navigation {
+	font-size: 16px;
+	color: #000000;
+	background-color: #eeeeee;
+	line-height: 30px;
+	text-transform: uppercase;
+	
+}
+
+.main-navigation li{
+	list-style: none;
+}
+
+h1 {
+	font-size: 55px;
+	line-height: 55px;
+	text-align: center;
+	background-color: #eeeeee;
+}
+
+.goods {
+	background-color: white;
+}
+
+.goods li {
+	text-align: left;
+	list-style-type: none;
+}
+
+.goods li h3{
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.goods li p{
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+}
+
+.goods a{
+	text-align: center;
+	color:#ffffff;
+}
+
+.web-sites a{
+	background-color: #fb565a;
+}
+
+.app a{
+	background-color: #00ca74;
+}
+
+.presentation a{
+	background-color: #efc84a;
+} 
+
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); 
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; 
+}
+
+footer {
+	background-color: #ffffff;
+}
+
+.footer-icon {
+	background-color: #e1e1e1;
+	list-style: none;
+}
+
+.footer-text {
+	text-align: left;
+}
+
+.footer-text h2 {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.footer-text p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #444444;
+}
+
+.popup {
+	background-color: #ffffff;
+}
+
+.popup p {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.popup label {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.popup-button /*почему-то не работают слили этого класса*/{
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	background-color: #fb565a;
+}
+
+
+fieldset {
+	border: none;
+}
+
+legend {
+	color: #000000;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+label {
+	color: #283136;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.form-button {
+	color: #000000;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+}
+
+.site-examples a{
+	color: #000000;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.site-examples p{
+	color: #666666;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+}
+
+.site-examples button{
+ 	background-color: #fb565a
+ 	color: #ffffff;
+ 	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+}
+
+.site-hover {
+	background-color: #eeeeee; 
+	text-align: center;
+}

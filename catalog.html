@@ -2,11 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <a href="index.html">
         	<img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип Нердс">
         </a>
@@ -56,86 +58,98 @@
 
 			    <label for="filter-cart">Корзина</label>
 		    </fieldset>	
-	    	<button>Показать</button>
+	    	<button class="form-button">Показать</button>
 	   	</form>
 
-	    <section>
+	    <section class="site-examples">
 		    <h2 class="visually-hidden">Готовые шаблоны</h2>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
 			    <img src="img/preview-sedona.jpg" width="360px" height="576px" alt="sedona">
-			    <a href="#">Sedona</a>
-			    <p>Информационный сайт<br>
-			    для туристов</p>
-			    <button type="button">9 900 руб.</button>
+			    <div class="site-hover">
+				    <a href="#">Sedona</a>
+				    <p>Информационный сайт<br>
+				    для туристов</p>
+				    <button type="button">9 900 руб.</button>
+				  </div>
 		    </div>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
 			    <img src="img/preview-pink.jpg" width="360px" height="576px" alt="pink">
-			    <a href="#">Pink App</a>
-			    <p>Продуктивный лендинг<br>
-			    приложения для iOS и Android</p>
-			    <button type="button">9 900 руб.</button>
+			    <div class="site-hover">
+				    <a href="#">Pink App</a>
+				    <p>Продуктивный лендинг<br>
+				    приложения для iOS и Android</p>
+				    <button type="button">9 900 руб.</button>
+				  </div>
 		    </div>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
 			    <img src="img/preview-barbershop.jpg" width="360px" height="576px" alt="borodinski">
-			    <a href="#">Barbershop</a>
-			    <p>Сайт салона красоты.<br>
-			    Для мужчин, да.</p>
-			    <button type="button">9 900 руб.</button>
+			    <div class="site-hover">
+				    <a href="#">Barbershop</a>
+				    <p>Сайт салона красоты.<br>
+				    Для мужчин, да.</p>
+				    <button type="button">9 900 руб.</button>
+				  </div>
 		    </div>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
 			    <img src="img/preview-mishka.jpg" width="360px" height="576px" alt="mishka">
-			    <a href="#">Mishka</a>
-			    <p>Интернет магазин<br>
-			    вязанных игрушек</p>
-			    <button type="button">9 900 руб.</button>
+			    <div class="site-hover">
+				    <a href="#">Mishka</a>
+				    <p>Интернет магазин<br>
+				    вязанных игрушек</p>
+				    <button type="button">9 900 руб.</button>
+				  </div>
 		    </div>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
 			    <img src="img/preview-aplus.jpg" width="360px" height="576px" alt="a+">
-			    <a href="#">A Plus</a>
-			    <p>Лендинг курсов повышения<br>
-			    квалификации</p>
-			    <button type="button">9 900 руб.</button>
+			    <div class="site-hover">
+				    <a href="#">A Plus</a>
+				    <p>Лендинг курсов повышения<br>
+				    квалификации</p>
+				    <button type="button">9 900 руб.</button>
+				  </div>
 		    </div>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
 			    <img src="img/preview-kvast.jpg" width="360px" height="576px" alt="kvast">
-			    <a href="#">Кваст</a>
-			    <p>Промо-сайт производителя<br>
-			    крафтового кваса</p>
-			    <button type="button">9 900 руб.</button>
+			    <div class="site-hover">
+				    <a href="#">Кваст</a>
+				    <p>Промо-сайт производителя<br>
+				    крафтового кваса</p>
+				    <button type="button">9 900 руб.</button>
+				  </div>
 		    </div>
 	    </section>
     </main>
 
     <footer>
-      <ul>
+      <ul class="footer-icon">
         <li>
-          <a href="" aria-label="Вконтакте">
+          <a href="" aria-label="Вконтакте">Вконтакте
             <!--<img src="img/vk-icon.svg" width="26px" height="15px" alt="Vkontake">Вконтакте-->
           </a>
         </li>
         <li>
-          <a href="" aria-label="Фейсбук">
+          <a href="" aria-label="Фейсбук">Фейсбук
             <!--<img src="img/fb-icon.svg" width="12px" height="22px" alt="Facebook">Фейсбук-->
           </a>
         </li>
         <li>
-          <a href="" aria-label="Инстаграм">
+          <a href="" aria-label="Инстаграм">Инстаграм
             <!--<img src="img/insta-icon.svg" width="21px" height="21px" alt="instagram">Инстаграм-->
           </a>
         </li>
       </ul>
-      <div>
-        <h3>Давайте дружить, это выгодно!</h3>
-        Скидка 10% для друзей из социальных сетей
+      <div class="footer-text">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей</p>
       </div>
     </footer>
-    <div>
+    <div class="popup">
       <p>Напишите нам</p>
       <button type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -151,7 +165,7 @@
           <label for="user-text">Текст письма:</label>
           <textarea name="comment" id="user-text" rows="5" placeholder="В свободной форме" required></textarea>
         </div>
-        <button>Отправить</button>
+        <button class="popup-button">Отправить</button>
       </form>      
     </div>
   </body>
