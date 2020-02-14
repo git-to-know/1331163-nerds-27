@@ -1,38 +1,75 @@
 @font-face {
-    font-family: Roboto;
-    src: url(fonts/roboto.woff);
+  font-family: "Roboto";
+  src: url("fonts/fonts/roboto.woff2") format("woff2");
+  src: url("fonts/fonts/roboto.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/fonts/roboto.woff2") format("woff2");
+  src: url("fonts/fonts/roboto.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/fonts/roboto.woff2") format("woff2");
+  src: url("fonts/fonts/roboto.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
-	font-family: roboto, Arial, sans-serif;
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
+	line-height: 24px;
 	color: #000000;
 	background-color: #ffffff;
-	list-style-type: none;
+	list-style: none;
 }
 
 a {
 	text-decoration: none
 }
 
-.main-navigation {
-	font-size: 16px;
-	color: #000000;
-	background-color: #eeeeee;
-	line-height: 30px;
-	text-transform: uppercase;
-	
+.logo:hover {
+	opacity: 0.8;
 }
 
-.main-navigation li{
+.logo:active {
+	opacity: 0.3;
+}
+
+.main-navigation {
+	line-height: 30px;
+	color: #000000;
+	background-color: #eeeeee;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.links {
+	color: #000000;
+}
+
+.links a:hover {
+	color: #fb565a;
+}
+
+.links a:active {
+	opacity: 0.3;
+}
+
+.main-navigation li {
 	list-style: none;
 }
 
-h1 {
-	font-size: 55px;
-	line-height: 55px;
-	text-align: center;
-	background-color: #eeeeee;
+.link-shop {
+	border-bottom: 2px solid #fb565a;
+	color: inherit;
 }
 
 .goods {
@@ -44,52 +81,96 @@ h1 {
 	list-style-type: none;
 }
 
-.goods li h3{
+.goods-title {
+	font-weight: bold;
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
 }
 
-.goods li p{
-	font-size: 16px;
-	line-height: 24px;
+.goods-text {
 	color: #283136;
 }
 
-.goods a{
+.goods a {
+	font-weight: 500;
+	line-height: 18px;
 	text-align: center;
 	color:#ffffff;
+	text-transform: uppercase;
 }
 
-.web-sites a{
+.web-sites a {
 	background-color: #fb565a;
 }
 
-.app a{
+.web-sites a:hover {
+	background-color: #e74246;
+}
+
+.web-sites a:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 3 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.app a {
 	background-color: #00ca74;
 }
 
-.presentation a{
+.app a:hover {
+	background-color: #00bc6c;
+}
+
+.app a:active {
+	background-color: #00aa62;
+	color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 3 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.presentation a {
 	background-color: #efc84a;
 } 
 
-.visually-hidden { 
-    position: absolute !important;
-    height: 1px; 
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); 
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap; 
+.presentation a:hover {
+	background-color: #eab534;
 }
 
-footer {
+.presentation a:active {
+	background-color: #e5a722;
+	color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 3 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+footer{
 	background-color: #ffffff;
 }
 
-.footer-icon {
+.footer-icon a{
 	background-color: #e1e1e1;
 	list-style: none;
+}
+
+.footer-icon a:hover{
+	background-color: #e74246;
+}
+
+.footer-icon a:active{
+	background-color: #d7373b;
+	box-shadow: 0 3 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .footer-text {
@@ -103,7 +184,6 @@ footer {
 }
 
 .footer-text p {
-	font-size: 16px;
 	line-height: 22px;
 	color: #444444;
 }
@@ -113,70 +193,133 @@ footer {
 }
 
 .popup p {
+	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
 }
 
 .popup label {
 	font-weight: bold;
-	font-size: 16px;
 	line-height: 18px;
 }
 
-.popup-button /*почему-то не работают слили этого класса*/{
-	color: #ffffff;
-	font-size: 16px;
+.popup-button {
+	font-weight: 500;
+	color: #000000;
 	line-height: 18px;
 	background-color: #fb565a;
+	text-transform: uppercase;
 }
 
+.popup-field{
+	line-height: 18px;
+	color: rgba(68, 68, 68, 0.5);
+	border: 2px solid #d7dcde;
+}
+.popup-field:hover {
+	line-height: 18px;
+	color: rgba(68, 68, 68, 0.5);
+	border: 2px solid #b4b9bb;
+}
 
-fieldset {
+.popup-field:focus {
+	line-height: 18px;
+	color: #444444;
+	border: 2px solid #000000;
+}
+
+.popup-field::invalid {
+	line-height: 18px;
+	color: #e74246;
+	border: 2px solid #e74246;
+}
+
+.title {
+	font-size: 55px;
+	line-height: 55px;
+	text-align: center;
+	background-color: #eeeeee;
+	font-weight: 500;
+}
+
+.selection {
 	border: none;
 }
 
-legend {
+.selection-title {
 	color: #000000;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
 }
 
-label {
+.selection-features {
 	color: #283136;
-	font-size: 16px;
 	line-height: 20px;
+}
+
+.selection-features:disabled {
+	color: rgba(40, 49, 54, 0.3);
 }
 
 .form-button {
 	color: #000000;
-	font-size: 16px;
+	background-color: #eeeeee;
 	line-height: 18px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
-.site-examples a{
+.form-button:hover {
+	background-color: #dfdfdf;
+}
+
+.form-button:active {
+	color: rgba(0, 0, 0, 0.3);
+	background-color:#d5d5d5;
+	box-shadow: 0 3 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.site-hover a {
 	color: #000000;
 	font-size: 18px;
 	line-height: 30px;
 	text-align: center;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
-.site-examples p{
+.site-hover a:hover {
+	color: #fb565a;
+}
+
+.site-hover a:active {
+	color: rgba(0, 0, 0, 0.3)
+}
+
+.site-hover p {
 	color: #666666;
-	font-size: 16px;
 	line-height: 18px;
 	text-align: center;
 }
 
-.site-examples button{
- 	background-color: #fb565a
+.site-hover button {
+ 	background-color: #fb565a;
  	color: #ffffff;
- 	font-size: 16px;
-	line-height: 18px;
+ 	line-height: 18px;
 	text-align: center;
+	font-weight: 500;
+	text-transform: uppercase;
 }
+
+.site-hover button:hover {
+ 	background-color: #e74246;
+ }
+
+.site-hover button:active {
+ 	background-color: #d7373b;
+ 	box-shadow: 0 3 0 0 rgba(0, 1, 1, 0.1);
+ }
 
 .site-hover {
 	background-color: #eeeeee; 

@@ -10,50 +10,54 @@
     <header>
       <nav class="main-navigation">
         <a href="index.html">
-        	<img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип Нердс">
+        	<img class="logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
         </a>
-        <ul>
+        <ul class="links">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a>Магазин</a></li>
+          <li><a class="link-shop">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <div>
           <!--<img src="img/cart-icon.svg" width="15px" height="15px" alt="Корзина">-->
-          <a href="#">Корзина<a>
+          <a href="#">Корзина</a>
         </div>
       </nav>
     </header>
     <main>
-    	<h1>Магазин готовых шаблонов</h1>
+    	<h1 class="title">Магазин готовых шаблонов</h1>
 	    <form class="form" action="https://echo.htmlacademy.ru" method="post">
-		    <fieldset>
-			    <legend>Сетка:</legend>
+		    
+		    <fieldset class="selection">
+			    
+			    <legend class="selection-title">Сетка:</legend>
 			    <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-			    <label for="filter-adaptive">
+			    <label for="filter-adaptive" class="selection-features">
 			    Адаптивная</label>
+			    
 			    <input type="radio" name="grid" value="fixed" id="filter-fixed">
-			    <label for="filter-fixed">
+			    <label for="filter-fixed" class="selection-features">
 			    Фиксированная</label>
+			   
 			    <input type="radio" name="grid" value="rubber" id="filter-rubber">
-			    <label for="filter-rubber">
+			    <label for="filter-rubber" class="selection-features">
 			    Резиновая</label>
 		    </fieldset>
-		    <fieldset>
+		    <fieldset class="selection">
 
-			    <legend>Особенности:</legend>
+			    <legend class="selection-title">Особенности:</legend>
 			    <input type="checkbox" name="feature" value="slider" id="filter-slider" checked>
 
-			    <label for="filter-slider">Слайдер</label>
+			    <label for="filter-slider" class="selection-features">Слайдер</label>
 			    <input type="checkbox" name="feature" value="advantage" id="filter-advantage">
 
-			    <label for="filter-advantage">Блок преимущество</label>
+			    <label for="filter-advantage" class="selection-features">Блок преимущество</label>
 			    <input type="checkbox" name="feature" value="news" id="filter-news" checked>
 
-			    <label for="filter-news">Новости</label>
+			    <label for="filter-news" class="selection-features">Новости</label>
 			    <input type="checkbox" name="feature" value="gallery" id="filter-gallery">
 
-			    <label for="filter-gallery">Галерея</label>
+			    <label for="filter-gallery" class="selection-features">Галерея</label>
 			    <input type="checkbox" name="feature" value="cart" id="filter-cart">
 
 			    <label for="filter-cart">Корзина</label>
@@ -62,10 +66,10 @@
 	   	</form>
 
 	    <section class="site-examples">
-		    <h2 class="visually-hidden">Готовые шаблоны</h2>
+		    <h2 class="visuallyhidden">Готовые шаблоны</h2>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
-			    <img src="img/preview-sedona.jpg" width="360px" height="576px" alt="sedona">
+			    <img src="img/preview-sedona.jpg" width="360" height="576" alt="sedona">
 			    <div class="site-hover">
 				    <a href="#">Sedona</a>
 				    <p>Информационный сайт<br>
@@ -75,7 +79,7 @@
 		    </div>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
-			    <img src="img/preview-pink.jpg" width="360px" height="576px" alt="pink">
+			    <img src="img/preview-pink.jpg" width="360" height="576" alt="pink">
 			    <div class="site-hover">
 				    <a href="#">Pink App</a>
 				    <p>Продуктивный лендинг<br>
@@ -85,7 +89,7 @@
 		    </div>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
-			    <img src="img/preview-barbershop.jpg" width="360px" height="576px" alt="borodinski">
+			    <img src="img/preview-barbershop.jpg" width="360" height="576" alt="borodinski">
 			    <div class="site-hover">
 				    <a href="#">Barbershop</a>
 				    <p>Сайт салона красоты.<br>
@@ -95,7 +99,7 @@
 		    </div>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
-			    <img src="img/preview-mishka.jpg" width="360px" height="576px" alt="mishka">
+			    <img src="img/preview-mishka.jpg" width="360" height="576" alt="mishka">
 			    <div class="site-hover">
 				    <a href="#">Mishka</a>
 				    <p>Интернет магазин<br>
@@ -105,7 +109,7 @@
 		    </div>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
-			    <img src="img/preview-aplus.jpg" width="360px" height="576px" alt="a+">
+			    <img src="img/preview-aplus.jpg" width="360" height="576" alt="a+">
 			    <div class="site-hover">
 				    <a href="#">A Plus</a>
 				    <p>Лендинг курсов повышения<br>
@@ -115,7 +119,7 @@
 		    </div>
 		    <div>
 			    <!--<img src="img/browser.svg" width="360px" height="40px" alt="browser">-->
-			    <img src="img/preview-kvast.jpg" width="360px" height="576px" alt="kvast">
+			    <img src="img/preview-kvast.jpg" width="360" height="576" alt="kvast">
 			    <div class="site-hover">
 				    <a href="#">Кваст</a>
 				    <p>Промо-сайт производителя<br>
