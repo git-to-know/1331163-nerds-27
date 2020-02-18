@@ -51,23 +51,23 @@ a {
   font-weight: 500;
 }
 
-.links {
-  color: #000000;
-}
-
-.links a:hover {
-  color: #fb565a;
-}
-
-.links a:active {
-  opacity: 0.3;
-}
-
 .main-navigation li {
   list-style: none;
 }
 
-.link-shop {
+.links-item {
+  color: #000000;
+}
+
+.links-item:hover {
+  color: #fb565a;
+}
+
+.links-item:active {
+  opacity: 0.3;
+}
+
+.links-item-active {
   border-bottom: 2px solid #fb565a;
   color: inherit;
 }
