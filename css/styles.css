@@ -296,10 +296,6 @@ footer {
   border-color: #b4b9bb;
 }
 
-.popup-field::placeholder:hover {
-  color: rgba(68, 68, 68, 0.5);
-}
-
 .popup-field:focus {
   border-color: #000000;
 }
