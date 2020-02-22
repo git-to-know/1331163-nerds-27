@@ -28,11 +28,48 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
+  min-width: 1440px;
+}
+
+html { 
+  box-sizing: border-box; 
+}
+
+*, *::before, *::after { 
+  box-sizing: inherit; 
 }
 
 a {
   text-decoration: none
 }
+
+
+
+.main-header {
+  background-color: #eeeeee;
+  width: auto;
+  margin: 0 auto; 
+  padding: 0 140px
+}
+
+.main-navigation {
+  color: #000000;  
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding: 49px 140px 0px;
+  line-height: 30px;
+}
+
+.main-navigation li {
+  list-style: none;
+}
+
+.main-logo {  
+  width: 160px;
+  height: 65px;
+} 
 
 .logo:hover {
   opacity: 0.8;
@@ -42,19 +79,21 @@ a {
   opacity: 0.3;
 }
 
-.main-header {
-  background-color: #eeeeee;
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
-.main-navigation {
-  line-height: 30px;
-  color: #000000;  
-  text-transform: uppercase;
-  font-weight: 500;
+.links li {
+  padding: 26px 0px 8px;
+  align-items: center;
 }
 
-.main-navigation li {
-  list-style: none;
+.links li:not(:last-child) {
+  padding-right: 47px;
 }
 
 .links-item {
@@ -74,8 +113,38 @@ a {
   color: inherit;
 }
 
+.user-navigation {
+  padding-top: 26px;
+  padding-bottom: 8px;
+}
+
+.container {
+  margin: 0 auto; 
+  padding: 0 140px
+}
+
 .goods {
-  
+  display: flex;
+  justify-content: space-between;
+  margin-right: 140px;
+  margin-left: 140px;
+  padding: 0;
+}
+
+.web-sites,
+.app,
+.presentation {
+  width: 300px;
+}
+
+.goods-image {
+  margin-bottom: 26px;
+}
+
+.goods-button {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 39px;
 }
 
 .goods li {
@@ -87,10 +156,13 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .goods-text {
   color: #283136;
+  padding: 20px 40px 0px 0px;
+  margin: 0;
 }
 
 .goods a {
@@ -234,9 +306,6 @@ footer {
 
 .popup-field:invalid {
   border-color: #e74246;
-}
-
-.popup-field::placeholder:invalid {
   color: #e74246;
 }
 
@@ -332,86 +401,11 @@ footer {
   text-align: center;
 }
 
-.main-header {
-  width: 1440px;
-  height: 545px;
-  margin-bottom: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-}
 
-.main-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: auto;
-  height: 65px;
-  margin: 0px 140px 0px 140px;
-  padding-top: 49px;
-}
 
-.main-logo {  
-  width: 160px;
-  height: 65px;
-  padding: 0;
-  margin: 0;
-}
 
-.links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 438px;
-  padding-top: 34px;
-  /*padding-left: 202px;*/  
-  padding-bottom: 16px;
-  /*padding-right: auto;*/
-  margin: 0;
-}
 
-.user-navigation {
-  width: 74px;
-  /*align-self: end;*/
-  padding-top: 34px;
-  padding-bottom: 16px;
-}
 
-.container {
-  max-width: 1440px;
-  margin: auto;
-}
 
-.goods {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: auto;
-  margin-right: 140px;
-  margin-left: 140px;
-  padding: 0;
-}
 
-.web-sites,
-.app,
-.presentation {
-  width: 300px;
-}
 
-.goods-image {
-  margin-bottom: 26px;
-}
-
-.goods-button {
-  width: 160px;
-  height: 50px;
-}
-
-.goods-title {
-  margin: 0;
-}
-
-.goods-text {
-  padding-right: 40px;
-}
