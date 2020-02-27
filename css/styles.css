@@ -1,23 +1,23 @@
 @font-face {
   font-family: "Roboto";
-  src: url("fonts/fonts/roboto.woff2") format("woff2");
-  src: url("fonts/fonts/roboto.woff") format("woff");
+  src: url("fonts/roboto.woff2") format("woff2");
+  src: url("fonts/roboto.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("fonts/fonts/robotomedium.woff2") format("woff2");
-  src: url("fonts/fonts/robotomedium.woff") format("woff");
+  src: url("fonts/robotomedium.woff2") format("woff2");
+  src: url("fonts/robotomedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("fonts/fonts/robotobold.woff2") format("woff2");
-  src: url("fonts/fonts/robotobold.woff") format("woff");
+  src: url("fonts/robotobold.woff2") format("woff2");
+  src: url("fonts/robotobold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -29,6 +29,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   min-width: 1440px;
+  max-width: 1440px;
 }
 
 html { 
@@ -56,7 +57,7 @@ a {
   font-weight: 500;
   display: flex;
   justify-content: space-between;
-  padding: 49px 140px 0px;
+  padding-top: 49px;
   line-height: 30px;
 }
 
@@ -119,7 +120,7 @@ a {
 .container {
   width: auto;
   margin: 0 auto; 
-  padding: 0 140px
+  /*padding: 0 140px;*/
 }
 
 .slider-background {
@@ -145,15 +146,15 @@ a {
   margin: 0px;
 }
 
-.slider-title, .phone {
+.slider-title.phone {
   width: 376px;
 }
 
-.slider-title, .pc {
+.slider-title.pc {
   width: 515px;
 }
 
-.slider-title, .gadget {
+.slider-title.gadget {
   width: 408px;
 }
 
@@ -163,15 +164,15 @@ a {
   margin: 0px;
 }
 
-.slider-text .phone {
+.slider-text.phone {
   width: 361px;
 }
 
-.slider-text .pc {
+.slider-text.pc {
   width: 409px;
 }
 
-.slider-text .gadget {
+.slider-text.gadget {
   width: 343px;
 }
 
@@ -314,8 +315,8 @@ a {
 }
 
 .about-text {
-  width: 647px,
-  padding-right: 152px;
+  width: 650px;
+  /*padding-right: 152px;*/
 }
 
 .about-text h3 {
@@ -323,38 +324,132 @@ a {
   line-height: 45px;
   font-weight: 500;
   margin: 0px;
+  padding-bottom: 35px;
 }
 
 .about-text p {
   color: #283136;
   width: 614px;
   margin: 0px;
+  padding-bottom: 47px;
 }
 
+.about-text h4 {
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.order li {
+list-style-type: none;
+}
 
 .about-numbers {
-  width: 360;
+  width: 360px;
+}
+
+.about-numbers img{
+  margin-bottom: 41px;
+}
+
+.about-numbers p{
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 49px;
+}
+
+.table-line1 td{
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 45px;
+  padding-right: 25px;
+  padding-bottom: 27px;
+}
+
+.table-line2 td{
+  line-height: 18px;
+  color: #283136;
+}
+
+.partners {  
+  margin: 0px 140px 80px;
+}
+
+.partners-links {
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 43px 0px 31px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 footer {
   width: auto;
-  margin: 0 auto; 
-  padding: 0 140px;
+  margin: 0 auto;
 }
 
-.bottom-footer {
-  display: flex;
-  padding: 0 140px
+.map-section img:first-of-type{
+  position: relative;
+  width: 100%;
+}
+
+.map-textbox {
+  position: absolute;
+  top: 2470px;
+  left: 120px;
+  /*margin-left: 140px;
+  align-items: center;*/
+  padding: 50px 60px;
+  background-color: white;
+}
+
+.map-section img:last-of-type{
+  position: absolute;
+  top: 2450px;
+  left: 800px;
+}
+
+.map-textbox h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0px;
+  padding-bottom: 32px;
+}
+
+.map-textbox p {
+  line-height: 18px;
+  margin: 0px;
+  color: #666666;
+}
+
+.map-textbox p:last-of-type{
+  padding-top: 25px;
 }
 
 .map-button {
   display: inline-block;
+  text-transform: uppercase;
+  line-height: 18px;
   padding: 16px 39px;
   color: white;
   background-color: #fb565a;
+  margin-top: 37px;
+}
+
+.bottom-footer {
+  display: flex;
+  padding: 0 140px;
+  justify-content: space-around;
 }
 
 .footer-icon {
+  align-self: left;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -375,6 +470,7 @@ footer {
 
 .footer-text {
   text-align: left;
+  align-self: center;
 }
 
 .footer-text h2 {
@@ -442,7 +538,7 @@ footer {
 
 .popup-field::placeholder {
   color: rgba(68, 68, 68, 0.5)
-  
+
 }
 
 .popup-field:hover {

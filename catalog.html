@@ -132,44 +132,56 @@
       </section>
     </main>
 
-    <footer>
-      <ul class="footer-icon">
-        <li>
-          <a href="" aria-label="Вконтакте">Вконтакте
-            <!--<img src="img/vk-icon.svg" width="26px" height="15px" alt="Vkontake">Вконтакте-->
-          </a>
-        </li>
-        <li>
-          <a href="" aria-label="Фейсбук">Фейсбук
-            <!--<img src="img/fb-icon.svg" width="12px" height="22px" alt="Facebook">Фейсбук-->
-          </a>
-        </li>
-        <li>
-          <a href="" aria-label="Инстаграм">Инстаграм
-            <!--<img src="img/insta-icon.svg" width="21px" height="21px" alt="instagram">Инстаграм-->
-          </a>
-        </li>
-      </ul>
-      <div class="footer-text">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей</p>
+<footer>
+      <div class="map-section">
+        <img src="img/map.jpg" height="416px" alt="map">
+        <img src="img/map-marker.png" width="231px" height="190px" alt="map-marker">
+        <!--<div class="map-textbox">
+          <h3>Nёrds design studio</h3>
+          <p>191186, Санкт-Петербург,<br> 
+              ул. Б. Конюшенная, д. 19/8</p>
+          <p class=>тел. +7 (812) 275-75-75</p>
+          <a class="map-button" href="#">Напишите нам</a>-->
+      </div>
+      <div class="bottom-footer">
+        <ul class="footer-icon">
+          <li>
+            <a href="#" aria-label="Вконтакте">Вконтакте
+              <!--<img src="img/vk-icon.svg" width="26px" height="15px" alt="Vkontake">Вконтакте-->
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Фейсбук">Фейсбук
+              <!--<img src="img/fb-icon.svg" width="12px" height="22px" alt="Facebook">Фейсбук-->
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Инстаграм">Инстаграм
+              <!--<img src="img/insta-icon.svg" width="21px" height="21px" alt="instagram">Инстаграм-->
+            </a>
+          </li>
+        </ul>
+        <div class="footer-text">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>
       </div>
     </footer>
     <div class="popup">
       <p>Напишите нам</p>
       <button type="button">Закрыть</button>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
         <div>
-          <input class="popup-field" for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
+          <label for="user-name">Ваше имя:</label><br>
+          <input class="popup-field name" id="user-name" type="text" name="name" placeholder="Имя Фамилия" required>
         </div>
         <div>
-          <input class="popup-field" for="user-email">Ваш e-mail:</label>
-          <input id="user-email" type="email" name="email" placeholder="email@example.com" required>
+          <label for="user-email">Ваш e-mail:</label><br>
+          <input class="popup-field email" id="user-email" type="email" name="email" placeholder="email@example.com" required>
         </div>
         <div>
-          <input class="popup-field" for="user-text">Текст письма:</label>
-          <textarea name="comment" id="user-text" rows="5" placeholder="В свободной форме" required></textarea>
+          <label for="user-text">Текст письма:</label><br>
+          <textarea class="popup-field text" name="comment" id="user-text" rows="5" placeholder="В свободной форме" required></textarea>
         </div>
         <button class="popup-button">Отправить</button>
       </form>      
