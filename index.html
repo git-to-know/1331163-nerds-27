@@ -19,8 +19,7 @@
           <li><a class="links-item" href="#">Контакты</a></li>
         </ul>
         <div class="user-navigation">
-          <!--<img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">-->
-          <a class="links-item" href="#">Корзина </a>
+          <a class="links-item cart" href="#">Корзина </a>
         </div>
       </nav>
     </header>
@@ -140,29 +139,30 @@
     <footer>
       <div class="map-section">
         <img src="img/map.jpg" height="416" alt="map">
-        <img src="img/map-marker.png" width="231" height="190" alt="map-marker">
+        <img src="img/map-marker.png" width="231" height="190" alt="map-marker"> 
         <div class="map-textbox">
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург,<br> 
               ул. Б. Конюшенная, д. 19/8</p>
           <a href="#" >тел. +7 (812) 275-75-75</a>
           <a class="main-button" href="#">Напишите нам</a>
+        </div>
       </div>
       <div class="bottom-footer">
         <ul class="footer-icon">
           <li>
-            <a href="#" aria-label="Вконтакте">Вконтакте
-              <!--<img src="img/vk-icon.svg" width="26" height="15" alt="Vkontake">Вконтакте-->
+            <a href="#" aria-label="Вконтакте">
+              <img src="img/vk-icon.svg" width="26" height="15" alt="Vkontake">
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Фейсбук">Фейсбук
-              <!--<img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">Фейсбук-->
+            <a href="#" aria-label="Фейсбук">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Инстаграм">Инстаграм
-              <!--<img src="img/insta-icon.svg" width="21" height="21" alt="instagram">Инстаграм-->
+            <a href="#" aria-label="Инстаграм">
+              <img src="img/insta-icon.svg" width="21" height="21" alt="instagram">
             </a>
           </li>
         </ul>
@@ -173,8 +173,10 @@
       </div>
     </footer>
     <div class="popup">
-      <p>Напишите нам</p>
-      <button type="button">Закрыть</button>
+      <div class="popup-top">
+        <p>Напишите нам</p>
+        <a href="#" class="close-cross-button"></a>
+      </div>
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
         <div>
           <label for="user-name">Ваше имя:</label>
@@ -188,7 +190,7 @@
           <label for="user-text">Текст письма:</label>
           <textarea class="popup-field text" name="comment" id="user-text" rows="5" placeholder="В свободной форме" required></textarea>
         </div>
-        <button class="popup-button">Отправить</button>
+        <button class="main-button">Отправить</button>
       </form>      
     </div>
   </body>
