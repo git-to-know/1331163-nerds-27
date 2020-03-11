@@ -448,6 +448,10 @@ footer {
 
 .map-section {
   position: relative;
+  height: 416px;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .map-section img { 
