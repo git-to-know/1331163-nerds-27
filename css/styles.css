@@ -449,9 +449,7 @@ footer {
 .map-section {
   position: relative;
   height: 416px;
-  background-image: url(../img/map.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: url(../img/map.jpg) 100% 100% no-repeat;
 }
 
 .map-section img { 
@@ -461,8 +459,7 @@ footer {
 
 .map-textbox {
   position: absolute;
-  top: 54px;
-  left: 140px;
+  top: 45px;
   padding: 50px 50px;
   background-color: white;
   width: 319px;
@@ -686,21 +683,30 @@ footer {
   margin: 0 auto;
 }
 
-.section-cards {
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.cards-container {
-  display: flex;  
-}
-
 .selection-title {
   color: #000000;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .measure {
@@ -718,11 +724,8 @@ footer {
 
 .filter-item {
   margin: 0;
-  padding: 0;
-  
-  border: none;
-  
-  
+  padding: 0;  
+  border: none;  
 }
 
 .range-filter {
@@ -823,6 +826,7 @@ footer {
   border: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
   margin-top: 57px;
   padding: 0px;
 }
@@ -835,34 +839,106 @@ footer {
   position: relative;
 }
 
-
-.grid::before {
-  background-image: url("../img/radio-off.svg");
-  width: 25px;
-  height: 25px; 
-  position: absolute;
-  content: "";
-  background-repeat: no-repeat;
-  top: 0;
-  left: 0;
+fieldset li{
+  list-style-type: none;
 }
 
-.grid, .features{
-  padding-left: 35px;
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 5;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.4
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+
+  position: absolute;
+  left: -42px;
+  top: 5;
+
+  width: 27px;
+  height: 23px;
+  
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.4
+}
+
+.filter-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  left: -42px;
+  top: -3px;
+
+  width: 25px;
+  height: 25px;
+  
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked + label::before {
+  content: "";
+
+  position: absolute;
+  top: -3px;
+  left: -42px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.4;
+}
+
+.filter-input:hover + label::before{
+  opacity: 1
+}
+
+.filter-input:checked:hover + label::before{
+  opacity: 1
+}
+
+.filter-input:disabled + label::before {
+  opacity: 0.1;
 }
 
 .selection-features {
   color: #283136;
-  line-height: 20px;  
+  line-height: 20px;
+  position: relative;  
 }
 
 .selection-features:disabled {
   color: rgba(40, 49, 54, 0.3);
 }
 
-.selection div {
+.selection li {
   padding-bottom: 20px;
 } 
+
+.selection ul {
+  margin: 0;
+}
 
 .form-button {
   font-weight: 500;
@@ -980,15 +1056,32 @@ footer {
   text-align: center;
 }
 
+.pagination {
+  padding: 27px 0 60px 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.pagination a {
+  display: block;
+  padding: 16px 22px;
+  color: #000000;
+  font-weight: 500;
+}
+
 .page {
-  width: 50px;
-  height: 50px;
   background-color: #eeeeee;
-  display: inline-block;
   line-height: 18px;
   font-weight: 500;
   color: black;
-  border-radius: 3px;  
+  border-radius: 3px;
+  margin-right: 11px;  
+}
+
+.page:last-child {
+  margin-right: 0;
 }
 
 .page:hover,
@@ -1002,20 +1095,9 @@ footer {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.paginator {
-  padding-bottom: 60px;  
+.pagination a:active {
+  opacity: 0.3;
 }
-
-.paginator a {
-  vertical-align: middle;
-  text-align: center;
-}
-
-.first,
-.second,
-.third {
-  margin-right: 11px;
-} 
 
 .next {
   padding: 0 79px;
@@ -1023,6 +1105,7 @@ footer {
 }
 
 .carrent {
-  border: 3px solid #dbdbdb;
+  outline: 3px solid #dbdbdb;
+  outline-offset: -3px;
   background-color: white;
 }
