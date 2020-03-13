@@ -32,8 +32,8 @@
         </div>
       </div>
 
-      <section>
-        <div class="container" style="display: flex;">
+      <section class="measure-section">
+        <div class="container">
           
           <div class="measure">
             <form method="get" action="https://echo.htmlacademy.ru">
@@ -42,14 +42,14 @@
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                      <div class="bar"></div>
                     </div>
                     <div class="toggle toggle-min"></div>
                     <div class="toggle toggle-max"></div>
                   </div>
                   <div class="price-controls">
-                    <label class="min-price">от <input name="min-price" type="number" value="0"></label>
-                    <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+                    <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до<input name="max-price" type="text" value="15 000"></label>
                   </div>
                 </div>
               </fieldset>
@@ -135,7 +135,7 @@
 
             <h2 class="visually-hidden">Готовые шаблоны</h2>
             <div class="site-examples">
-              <div>
+              <div class="site-examples-item">
                 <!--<img src="img/browser.svg" width="360" height="40" alt="browser">-->
                 <img src="img/preview-sedona.jpg" width="360" height="576" alt="sedona">
                 <div class="site-hover">
@@ -145,7 +145,7 @@
                   <button class="main-button" type="button">9 900 руб.</button>
                 </div>
               </div>
-              <div>
+              <div class="site-examples-item">
                 <!--<img src="img/browser.svg" width="360" height="40" alt="browser">-->
                 <img src="img/preview-pink.jpg" width="360" height="576" alt="pink">
                 <div class="site-hover">
@@ -155,7 +155,7 @@
                   <button class="main-button" type="button">9 900 руб.</button>
                 </div>
               </div>
-              <div>
+              <div class="site-examples-item">
                 <!--<img src="img/browser.svg" width="360" height="40" alt="browser">-->
                 <img src="img/preview-barbershop.jpg" width="360" height="576" alt="borodinski">
                 <div class="site-hover">
@@ -165,7 +165,7 @@
                   <button class="main-button" type="button">9 900 руб.</button>
                 </div>
               </div>
-              <div>
+              <div class="site-examples-item">
                 <!--<img src="img/browser.svg" width="360" height="40" alt="browser">-->
                 <img src="img/preview-mishka.jpg" width="360" height="576" alt="mishka">
                 <div class="site-hover">
@@ -175,7 +175,7 @@
                   <button class="main-button" type="button">9 900 руб.</button>
                 </div>
               </div>
-              <div>
+              <div class="site-examples-item">
                 <!--<img src="img/browser.svg" width="360" height="40" alt="browser">-->
                 <img src="img/preview-aplus.jpg" width="360" height="576" alt="a+">
                 <div class="site-hover">
@@ -185,7 +185,7 @@
                   <button class="main-button" type="button">9 900 руб.</button>
                 </div>
               </div>
-              <div>
+              <div class="site-examples-item">
                 <!--<img src="img/browser.svg" width="360" height="40" alt="browser">-->
                 <img src="img/preview-kvast.jpg" width="360" height="576" alt="kvast">
                 <div class="site-hover">
@@ -210,7 +210,7 @@
       </section>
 
       <section class="map-section">                
-        <div class="container" style="position: relative;">
+        <div class="container">
           <div class="map-textbox">
             <h3>Nёrds design studio</h3>
             <p>191186, Санкт-Петербург,<br> 
