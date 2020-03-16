@@ -115,8 +115,9 @@ a {
 }
 
 .cart {
-  padding-left:41px;
+  padding:26px 0 8px 41px;
   position: relative;
+
 }
 
 .cart::before {
@@ -126,7 +127,7 @@ a {
   height: 15px;
   background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
-  top: 0px;
+  top: 32px;
   left: 0px;
 }
 
@@ -580,8 +581,6 @@ footer {
   margin: 0 auto;
   position: relative;
   box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75);
-  /*временно*/
-  border: 1px solid black;
   display: none;
 }
 
@@ -670,6 +669,7 @@ footer {
   height: 118px;
   margin-top: 12px;
   margin-bottom: 45px;
+  resize: none;
 }
 
 .container-title {
@@ -1054,6 +1054,11 @@ fieldset li{
   top: -20px;
 }
 
+.site-examples-item:hover .site-hover {
+  display: block;
+
+}
+
 .site-hover a {
   color: #000000;
   font-size: 18px;
@@ -1091,6 +1096,12 @@ fieldset li{
 .site-hover {
   background-color: #eeeeee; 
   text-align: center;
+  padding-top: 35px;
+  padding-bottom: 43px;
+  width: 360px;
+  display: none;
+  position: absolute;
+  bottom: 40px;
 }
 
 .pagination {
