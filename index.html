@@ -24,44 +24,59 @@
       </div>
     </header>
     <main>
+      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
       <div class="slider-background">
         <div class="container">
           <section class="slider-section">
+            <div class="slider-controls">
+              <label for="product-1">Первый</label>
+              <label for="product-2">Второй</label>
+              <label for="product-3">Третий</label>
+            </div>
             
-            <div class="slider-box">
-              <div>
-                <h3 class="slider-title phone">Долго, догоро, скурпулезно.</h3>
-                <p class="slider-text phone">Математически выверенный дизайн<br> 
-                для вашего сайта или мобильного приложения.</p>
-                <a class="main-button" href="#">Узнать больше</a>
-              </div>
-              <div>
-                <img class="slider-image-phone" src="img/slide-picture_phone.png" width="698" height="413" alt="слайдер-телефоны">
+            <div class="slide" id="slide1">
+              <div class="slider-box">
+                <div class="slider-description">
+                  <h3 class="slider-title phone">Долго, догоро, скурпулезно.</h3>
+                  <p class="slider-text phone">Математически выверенный дизайн<br> 
+                  для вашего сайта или мобильного приложения.</p>
+                  <a class="main-button" href="#">Узнать больше</a>
+                </div>
+                <div>
+                  <img class="slider-image-phone" src="img/slide-picture_phone.png" width="698" height="413" alt="слайдер-телефоны">
+                </div>
               </div>
             </div>
             
-            <div class="slider-box">
-              <div>
-                <h3 class="slider-title pc">Любим математику как никто другой</h3>
-                <p class="slider-text pc">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                <a class="main-button" href="#">Узнать больше</a>
-              </div>
-              <div>
-                <img class="slider-image-pc" src="img/slide-picture_pc.png" width="663" height="430" alt="слайдер-компьютеры">
+            <div class="slide" id="slide2">
+              <div class="slider-box">
+                <div class="slider-description">
+                  <h3 class="slider-title pc">Любим математику как никто другой</h3>
+                  <p class="slider-text pc">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                  <a class="main-button" href="#">Узнать больше</a>
+                </div>
+                <div>
+                  <img class="slider-image-pc" src="img/slide-picture_pc.png" width="663" height="413" alt="слайдер-компьютеры">
+                </div>
               </div>
             </div>
             
-            <div class="slider-box">
-              <div>
-                <h3 class="slider-title gadget">Только ночь, только хардкор</h3>
-                <p class="slider-text gadget">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-                <a class="main-button" href="#">Узнать больше</a>
-              </div>
-              <div>
-                <img class="slider-image-gadget" src="img/slide-picture_gadget.png" width="759" height="411" alt="слайдер-телефоны">
+            <div class="slide" id="slide3">
+              <div class="slider-box">
+                <div class="slider-description">
+                  <h3 class="slider-title gadget">Только ночь, только хардкор</h3>
+                  <p class="slider-text gadget">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                  <a class="main-button" href="#">Узнать больше</a>
+                </div>
+                <div>
+                  <img class="slider-image-gadget" src="img/slide-picture_gadget.png" width="759" height="413" alt="слайдер-телефоны">
+                </div>
               </div>
             </div>
-            <div>Переключатель</div>
+            
           </section>
         </div>
       </div>
