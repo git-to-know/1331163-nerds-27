@@ -509,6 +509,10 @@ a {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.partners-links a:not(:first-child):hover:before {
+  opacity: 0.2;
+}
+
 
 footer {
   margin: 0 auto;
