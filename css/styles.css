@@ -257,6 +257,10 @@ a {
   text-align: center;
 }
 
+.site-hover .main-button {
+  border-radius: 4px;
+}
+
 .slider-box a {
   background-color: #fb565a;
 }
@@ -480,6 +484,7 @@ a {
 
 .partners-links a {
   opacity: 0.2;
+  position: relative;
 }
 
 .partners-links a:hover,
@@ -490,6 +495,20 @@ a {
 .partners-links a:active {
   opacity: 0.1;
 }
+
+.partners-links a:not(:first-child):before {
+  content: "";
+
+  position: absolute;
+  top: 20px;
+  left: -45px;
+
+  width: 2px;
+  height: 52px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 
 footer {
   margin: 0 auto;
@@ -700,6 +719,7 @@ footer {
 
 .popup-field:focus {
   border-color: #000000;
+  outline: none;
 }
 
 .popup-field:invalid {
@@ -723,6 +743,10 @@ footer {
   margin-top: 12px;
   margin-bottom: 45px;
   resize: none;
+}
+
+.modal-show {
+  display: block;
 }
 
 .container-title {
