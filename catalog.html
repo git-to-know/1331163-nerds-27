@@ -36,7 +36,7 @@
         <div class="container">
           
           <div class="measure">
-            <form method="get" action="https://echo.htmlacademy.ru">
+            <form method="get">
               <fieldset class="filter-item">
                 <legend>Стоимость:</legend>
                 <div class="range-filter">
@@ -53,8 +53,9 @@
                   </div>
                 </div>
               </fieldset>
+            </form>
 
-            <form class="form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="form">
               <fieldset class="selection">
                 <legend class="selection-title">Сетка:</legend>
 
@@ -111,7 +112,7 @@
                 </ul>
                 
               </fieldset> 
-              <button class="form-button">Показать</button>
+              <button class="main-button form-button">Показать</button>
             </form>
           </div>
 
@@ -193,14 +194,13 @@
             </div> 
 
             <ul class="pagination">
-              <li class="page carrent"><a href="#1">1</a></li>
+              <li class="page current"><a href="#1">1</a></li>
               <li class="page"><a href="#2">2</a></li>
               <li class="page"><a href="#3">3</a></li>
               <li class="page next"><a href="#next">Следующая</a></li>
             </ul>
 
-          </div>       
-                  
+          </div>
         </div>
       </section>
 
@@ -249,7 +249,7 @@
       <div class="popup-top">
         <p>Напишите нам</p>
         <a href="#" class="close-cross-button"></a>
-        <span class="visually-hidden">Закрыть<span>
+        <span class="visually-hidden">Закрыть</span>
       </div>
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
         <div>
@@ -264,7 +264,7 @@
           <label for="user-text">Текст письма:</label>
           <textarea class="popup-field text" name="comment" id="user-text" rows="5" placeholder="В свободной форме" required></textarea>
         </div>
-        <button type="submit"class="main-button">Отправить</button>
+        <button type="submit" class="main-button">Отправить</button>
       </form>      
     </div>
   </body>
