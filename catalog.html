@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>HTML Academy: Нёрдс</title>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -112,7 +113,7 @@
                 </ul>
                 
               </fieldset> 
-              <button class="main-button form-button">Показать</button>
+              <button type="submit" class="main-button form-button">Показать</button>
             </form>
           </div>
 
@@ -122,7 +123,7 @@
               <div class="sort-links">
                 
                 <ul class="sort-features">
-                  <li>по цене</li>
+                  <li class="sort-current">по цене</li>
                   <li>по типу</li>
                   <li>по назначению</li>
                 </ul>
@@ -220,29 +221,27 @@
 
     <footer>
       <div class="container">
-        <div class="bottom-footer">
-          <ul class="footer-icon">
-            <li>
-              <a href="#" aria-label="Вконтакте">
-                <img src="img/vk-icon.svg" width="26" height="15" alt="Vkontake">
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Фейсбук">
-                <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Инстаграм">
-                <img src="img/insta-icon.svg" width="21" height="21" alt="instagram">
-              </a>
-            </li>
-          </ul>
-          <div class="footer-text">
-            <h2>Давайте дружить, это выгодно!</h2>
-            <p>Скидка 10% для друзей из социальных сетей</p>
-          </div>
-        </div>
+        <ul class="social-button">
+          <li>
+            <a href="#" aria-label="Вконтакте">
+              <img src="img/vk-icon.svg" width="26" height="15" alt="Vkontake">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Фейсбук">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Инстаграм">
+              <img src="img/insta-icon.svg" width="21" height="21" alt="instagram">
+            </a>
+          </li>
+        </ul>
+        <div class="footer-text">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>        
       </div>
     </footer>
     <div class="popup">
@@ -268,5 +267,4 @@
       </form>      
     </div>
   </body>
-  <script src="js/script.js"></script>
 </html>
