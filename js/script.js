@@ -16,7 +16,7 @@ try {
   storage = localStorage.getItem("name");
 } catch (err) {
   isStorageSupport = false;
-}
+	}
 
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -27,7 +27,7 @@ link.addEventListener("click", function (evt) {
     email.focus();
   } else {
     name.focus();
-  }
+  	}
 });
 
 close.addEventListener("click", function (evt) {
@@ -39,7 +39,7 @@ form.addEventListener("submit", function (evt) {
 if (!name.value || !email.value || !comment.value) {
   evt.preventDefault();
   console.log("Нужно ввести имя, имеил и текст письма");	
-	} else {
+} else {
 		if (isStorageSupport) {
       localStorage.setItem("name", name.value);
     }
@@ -47,10 +47,10 @@ if (!name.value || !email.value || !comment.value) {
 });
 
 window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-      }
-    }
-  });
+if (evt.keyCode === 27) {
+  evt.preventDefault();
+  if (popup.classList.contains("modal-show")) {
+    popup.classList.remove("modal-show");
+	}
+}
+});
