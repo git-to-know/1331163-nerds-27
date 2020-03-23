@@ -56,7 +56,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 42px 0 0;
+  padding: 0 45px 0 0;
   margin: 0;
   
 }
@@ -127,12 +127,12 @@ a {
   width: 18px;
   height: 18px;
   margin-right: 17px;
-  vertical-align: top;
   background-color: transparent;
   border: 9px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
   position: relative;
+  vertical-align: top;
 }
 
 .slider-controls label::after {
@@ -174,7 +174,7 @@ a {
 
 .slider-description {
   width: 515px;
-  padding-top: 69px;
+  padding-top: 67px;
   margin-right: 45px;
 }
 
@@ -211,7 +211,7 @@ a {
 .slider-text {
   color: #283136;
   padding-top: 28px;
-  padding-bottom: 36px;
+  padding-bottom: 40px;
   margin: 0px;
 }
 
@@ -234,17 +234,17 @@ a {
   padding-bottom: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: white;
   border-radius: 3px;
   text-align: center;
   color: #ffffff;
   outline: none;
   border: none;
+  vertical-align: top;
 }
 
 .slider-box .main-button {
   padding-right: 54px;
-  padding-left: 52px;
+  padding-left: 55px;
   background-color: #fb565a;
   margin-bottom: 80px;
 }
@@ -290,6 +290,7 @@ a {
   width: 1160px;
   margin: 0 auto;
   padding-right: 60px;
+  padding-bottom: 44px;
 }
 
 .web-sites,
@@ -316,15 +317,13 @@ a {
 
 .goods-text {
   color: #283136;
-  padding: 17px 40px 30px 0px;
+  padding: 16px 40px 29px 0px;
   margin: 0;
 }
 
 .goods .main-button {  
-  margin-bottom: 35px;  
-  padding-right: 43px;
-  padding-top: 18px;
-  padding-left: 38px;
+  margin-bottom: 35px;
+  padding: 18px 43px 16px 38px;
 }
 
 .web-sites .main-button {
@@ -385,7 +384,7 @@ a {
 .about {
   display: flex;
   justify-content: space-between;
-  padding: 39px 0px 37px 0;  
+  padding: 32px 0px 75px 0;  
 }
 
 .container .about {
@@ -393,7 +392,7 @@ a {
 }
 
 .about-text {
-  width: 650px;
+  width: 670px;
 }
 
 .about-text h3 {
@@ -401,15 +400,15 @@ a {
   line-height: 45px;
   font-weight: 500;
   margin: 0px;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
   padding-top: 43px;
 }
 
 .about-text p {
   color: #283136;
-  width: 614px;
+  width: 630px;
   margin: 0px;
-  padding-bottom: 37px;
+  padding-bottom: 39px;
 }
 
 .about-text h4 {
@@ -425,7 +424,7 @@ a {
 
 .order li {
   list-style-type: none;
-  padding-top: 24px;
+  padding-top: 25px;
   margin: 0;
   align-items: center;
   display: flex;
@@ -445,7 +444,7 @@ a {
 
 .about-numbers img {
   margin-top: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .about-numbers p {
@@ -453,23 +452,23 @@ a {
   text-align: center;
   text-transform: uppercase;
   margin: auto;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .percent {
-  top: -1em;
+  top: -0.5em;
 }
 
 .table-values td {
   font-weight: bold;
   font-size: 45px;
   line-height: 45px;
-  padding-right: 23px;
+  padding-right: 17px;
   padding-bottom: 18px;
 }
 
 .table-values sup {
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .table-features td {
@@ -546,6 +545,14 @@ a {
   background-size: cover;
 }
 
+.map-section iframe{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 416px;
+  border: 0;
+}
+
 .map-section .container {
   position: relative;
 }
@@ -557,15 +564,16 @@ a {
 
 .map-textbox {
   position: absolute;
-  top: 54px;
+  top: -373px;
   padding: 50px 50px;
   background-color: white;
   width: 319px;
+  z-index: 3;
 }
 
 .map-textbox .main-button {
   width: 100%;
-  margin-top: 32px;
+  margin-top: 34px;
   background-color: #fb565a;
 }
 
@@ -585,7 +593,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 }
 
 .map-textbox p {
@@ -593,6 +601,7 @@ a {
   margin: 0px;
   color: #666666;
   padding-bottom: 15px;
+  width: 210px;
 }
 
 .map-textbox a:first-of-type {
@@ -606,7 +615,7 @@ a {
 
 .social-button {  
   list-style: none;
-  padding: 5px 127px 5px 2px;
+  padding: 0px 125px 5px 2px;
   margin: 0;
   display: flex;
   align-items: center;
@@ -655,7 +664,7 @@ a {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
-  padding: 76px 0px 12px;
+  padding: 74px 0px 12px;
   margin: 0;
 }
 
@@ -668,13 +677,13 @@ a {
 
 .popup {
   position: fixed;
-  right: 180px;
-  bottom: 50px;
+  left: 50%;
+  bottom:50%;
   background-color: #ffffff;
   width: 935px;
   height: 575px;
   padding: 69px 60px 0px 93px;
-  margin: 0 auto;
+  margin-left: -450px;
   box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75);
   z-index: 50;
   display: none;
@@ -685,25 +694,26 @@ a {
   justify-content: space-between;
 }
 
-.close-cross-button::before {
+.close-cross-button {
   position: absolute;
-  content: "";
   top: 78px;
   left: 825px;
   width: 21px;
   height: 21px;
+  border: none;
+  background-color: transparent;
   background-image: url(../img/close-cross.svg);
-  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.3;
-  z-index: 100;
+  cursor: pointer;
 }
 
-.close-cross-button:hover::before,
-.close-cross-button:focus::before {
+.close-cross-button:hover,
+.close-cross-button:focus {
   opacity: 1;
 }
 
-.close-cross-button:active::before {
+.close-cross-button:active {
   opacity: 0.1;
 }
 
@@ -756,7 +766,7 @@ a {
 }
 
 .popup .main-button {
-  padding-right: 77px;
+  padding-right: 80px;
   padding-left: 84px;
   background-color: #fb565a;
 }
@@ -785,13 +795,58 @@ a {
   width: 744px;
   height: 115px;
   margin-top: 10px;
-  margin-bottom: 39px;
+  margin-bottom: 36px;
   resize: none;
   padding-top: 9px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .container-title {
@@ -836,6 +891,7 @@ input[type="radio"].visually-hidden {
 
 .measure {
   margin-right: 139px;
+  margin-top: 4px;
 }
 
 .measure-section .container {
@@ -925,6 +981,7 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   text-transform: uppercase;
   color: #283136;
+  vertical-align: top;
 }
 
 .price-controls input {
@@ -1057,7 +1114,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-button {
-  margin-top: 36px;
+  margin-top: 34px;
   border-radius: 3px;
   width: 100%;
   background-color: #eeeeee;
@@ -1097,7 +1154,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-features a {
-  padding-right: 24px;
+  padding-right: 20px;
   opacity: 0.3;
 }
 
@@ -1136,6 +1193,7 @@ input[type="radio"].visually-hidden {
   border: 6px solid transparent;
   border-top: 10px solid black;
   margin-top: 5px; 
+  vertical-align: top;
 }
 
 .arrow-top {
@@ -1213,15 +1271,39 @@ input[type="radio"].visually-hidden {
   color: #666666;
   line-height: 18px;
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 30px;
+  padding: 17px 80px 30px;
   margin: 0;
+}
+
+.site-hover .pink {
+  padding-right: 50px;
+  padding-left: 50px;
+} 
+
+.site-hover .barbershop {
+  padding-right: 90px;
+  padding-left: 90px;
+} 
+
+.site-hover .mishka {
+  padding-right: 80px;
+  padding-left: 80px;
+} 
+
+.site-hover .aplus {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.site-hover .kvast {
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .site-hover .main-button {
   background-color: #fb565a;
-  padding-right: 57px;
-  padding-left: 57px;
+  padding-right: 61px;
+  padding-left: 61px;
 }
 
 .site-hover .main-button:hover {
@@ -1237,16 +1319,16 @@ input[type="radio"].visually-hidden {
 .site-hover {
   background-color: #eeeeee; 
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 46px;
+  padding-top: 28px;
+  padding-bottom: 42px;
   width: 360px;
   display: none;
   position: absolute;
-  bottom: 3px;
+  bottom: -10px;
 }
 
 .pagination {
-  padding: 29px 0 62px 0;
+  padding: 27px 0 61px 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -1255,7 +1337,7 @@ input[type="radio"].visually-hidden {
 
 .pagination a {
   display: block;
-  padding: 16px 19px 13px 20px;
+  padding: 16px 20px 13px 20px;
   color: #000000;
   font-weight: 500;
 }
@@ -1266,7 +1348,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   color: black;
   border-radius: 3px;
-  margin-right: 14px;  
+  margin-right: 13px;  
 }
 
 .page:last-child {

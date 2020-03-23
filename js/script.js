@@ -33,12 +33,15 @@ link.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
 if (!name.value || !email.value || !comment.value) {
   evt.preventDefault();
-  console.log("Нужно ввести имя, имеил и текст письма");	
+  popup.classList.remove("modal-error");
+  popup.offsetWidth = popup.offsetWidth;
+  popup.classList.add("modal-error");	
 } else {
 		if (isStorageSupport) {
       localStorage.setItem("name", name.value);
@@ -51,6 +54,7 @@ if (evt.keyCode === 27) {
   evt.preventDefault();
   if (popup.classList.contains("modal-show")) {
     popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
 	}
 }
 });
