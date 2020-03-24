@@ -118,7 +118,7 @@ a {
   display: block;
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 79px;
+  margin-bottom: 80px;
   position: relative;
 }
 
@@ -317,7 +317,7 @@ a {
 
 .goods-text {
   color: #283136;
-  padding: 16px 40px 29px 0px;
+  padding: 16px 40px 31px 0px;
   margin: 0;
 }
 
@@ -477,12 +477,12 @@ a {
 }
 
 .partners {  
-  margin-bottom: 83px;
+  margin-bottom: 84px;
   position: relative;
 }
 
-.partners-links {
-  height: 180px;
+/*.partners-links {
+  min-height: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -508,7 +508,8 @@ a {
 .partners-links li {
   list-style-type: none;
   position: relative;
-  height: 90px;  
+  min-height: 90px;
+  width: 280px;
 }
 
 .partners-links li:last-child {
@@ -532,6 +533,85 @@ a {
   width: 2px;
   height: 52px;
   background-color: rgba(0, 0, 0, 0.1);
+}*/
+
+.partners-links {
+  min-height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+.partners-links li {  
+  list-style-type: none;
+  width: 280px;  
+  position: relative;
+}
+
+.partners-links a {
+  opacity: 0.2;  
+  display: flex;
+  justify-content: center;
+}
+
+.partners-links a:hover,
+.partners-links a:focus {
+  opacity: 1;
+}
+
+.partners-links a:active {
+  opacity: 0.1;
+}
+
+.partner-html-academy a {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.partner-borodinski a {
+  padding-top: 5px;
+}
+
+.partners-mishka a {
+  padding-top: 11px;
+  padding-left: 20px;
+}
+
+.partner-html-academy:after {  
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.partner-borodinski:after {  
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+}
+
+.partners-pink:after {  
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 50%;
+  right: -14px;
+  transform: translateY(-50%);
 }
 
 .footer {
@@ -573,7 +653,7 @@ a {
 
 .map-textbox .main-button {
   width: 100%;
-  margin-top: 34px;
+  margin-top: 36px;
   background-color: #fb565a;
 }
 
@@ -680,11 +760,11 @@ a {
   left: 50%;
   bottom:50%;
   background-color: #ffffff;
-  width: 935px;
-  height: 575px;
-  padding: 69px 60px 0px 93px;
-  margin-left: -450px;
-  margin-bottom: -295px;
+  width: 960px;
+  height: 591px;
+  padding: 68px 71px 0px 97px;
+  margin-left: -480px;
+  margin-bottom: -307px;
   box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75);
   z-index: 50;
   display: none;
@@ -697,8 +777,8 @@ a {
 
 .close-cross-button {
   position: absolute;
-  top: 78px;
-  left: 825px;
+  top: 79px;
+  left: 849px;
   width: 21px;
   height: 21px;
   border: none;
@@ -732,7 +812,7 @@ a {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  padding-bottom: 37px;
+  padding-bottom: 43px;
   margin: 0;
 }
 
@@ -767,9 +847,10 @@ a {
 }
 
 .popup .main-button {
-  padding-right: 80px;
-  padding-left: 84px;
+  padding-right: 85px;
+  padding-left: 83px;
   background-color: #fb565a;
+  margin-left: 3px;
 }
 
 .popup .main-button:hover {
@@ -783,9 +864,9 @@ a {
 }
 
 .name, .email {
-  width: 353px;
+  width: 362px;
   height: 50px;
-  margin: 11px 0px 31px 0px;
+  margin: 9px 0px 34px 0px;
 }
 
 .name {
@@ -793,10 +874,10 @@ a {
 }
 
 .text {
-  width: 744px;
+  width: 761px;
   height: 115px;
   margin-top: 10px;
-  margin-bottom: 36px;
+  margin-bottom: 42px;
   resize: none;
   padding-top: 9px;
 }
@@ -1008,20 +1089,16 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-top: 26px;
+  margin-top: 24px;
   padding: 0px;
 }
 
 .selection .selection-title {
-  padding-bottom: 13px;
+  padding-bottom: 14px;
 }
 
 .selection label {
   position: relative;
-}
-
-.selection li {
-  list-style-type: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -1107,7 +1184,8 @@ input[type="radio"].visually-hidden {
 }
 
 .selection li {
-  padding-bottom: 16px;
+  padding-bottom: 17px;
+  list-style-type: none;
 } 
 
 .selection ul {
@@ -1115,7 +1193,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-button {
-  margin-top: 33px;
+  margin-top: 29px;
   border-radius: 3px;
   width: 100%;
   background-color: #eeeeee;
@@ -1135,7 +1213,7 @@ input[type="radio"].visually-hidden {
 .sort {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 39px;
+  padding-bottom: 47px;
 }
 
 .sort-links {
@@ -1156,6 +1234,7 @@ input[type="radio"].visually-hidden {
 
 .sort-features a {
   padding-right: 20px;
+  color: black;
   opacity: 0.3;
 }
 
@@ -1183,7 +1262,6 @@ input[type="radio"].visually-hidden {
 
 .arrow li {
   list-style-type: none;
-  opacity: 0.2; 
 }
 
 .arrow-bottom {
@@ -1192,9 +1270,10 @@ input[type="radio"].visually-hidden {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-top: 10px solid black;
+  border-top: 10px solid #000000;
   margin-top: 5px; 
   vertical-align: top;
+  opacity: 0.2;
 }
 
 .arrow-top {
@@ -1204,16 +1283,22 @@ input[type="radio"].visually-hidden {
   border: 6px solid transparent;
   border-bottom: 10px solid black;
   margin-bottom: 10px;
+  vertical-align: top;
+  opacity: 0.2;
 }
 
-.arrow li:hover,
-.arrow li:focus {
+.arrow a:hover,
+.arrow a:focus {
    opacity: 0.6;
 } 
 
-.arrow li:active {
+.arrow a:active {
   opacity: 1;
 } 
+
+.arrow .arrow-bottom {
+  opacity: 1;
+}
 
 .site-examples {
   display: flex;
@@ -1321,15 +1406,15 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee; 
   text-align: center;
   padding-top: 28px;
-  padding-bottom: 42px;
+  padding-bottom: 43px;
   width: 360px;
   display: none;
   position: absolute;
-  bottom: -10px;
+  bottom: 5px;
 }
 
 .pagination {
-  padding: 30px 0 61px 0;
+  padding: 31px 0 63px 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -1349,7 +1434,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   color: black;
   border-radius: 3px;
-  margin-right: 13px;  
+  margin-right: 12px;  
 }
 
 .page:last-child {
