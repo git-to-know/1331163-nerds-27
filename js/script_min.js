@@ -1,12 +1,1 @@
-var link = document.querySelector(.login-link);
-var popup = document.querySelector(.popup);
-var close = popup.querySelector(.close-cross-button);
-var form = popup.querySelector(popup-form);
-var name = popup.querySelector([name=name]);
-var email = popup.querySelector([name=email]);
-var comment = popup.querySelector([name=comment]);
-var isStorageSupport = true;
-var storage = ;
-try{storage:localStorage.getItem(name)}catch (err){isstoragesupport:false}link.addEventListener(click,function (evt){ifstoragenamevalue:storage});
-form.addEventListener(submit,function (evt){popupoffsetwidth:popup.offsetWidth});
-window.addEventListener(keydown,function (evt){ifevtkeycode:== 27) { evt.preventDefault()}
+var link=document.querySelector(".login-link"),popup=document.querySelector(".popup"),close=popup.querySelector(".close-cross-button"),form=popup.querySelector("popup-form"),name=popup.querySelector("[name=name]"),email=popup.querySelector("[name=email]"),comment=popup.querySelector("[name=comment]"),isStorageSupport=!0,storage="";try{storage=localStorage.getItem("name")}catch(e){isStorageSupport=!1}link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show"),storage?(name.value=storage,email.focus()):name.focus()}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal-show"),popup.classList.remove("modal-error")}),form.addEventListener("submit",function(e){name.value&&email.value&&comment.value?isStorageSupport&&localStorage.setItem("name",name.value):(e.preventDefault(),popup.classList.remove("modal-error"),popup.offsetWidth=popup.offsetWidth,popup.classList.add("modal-error"))}),window.addEventListener("keydown",function(e){27===e.keyCode&&(e.preventDefault(),popup.classList.contains("modal-show")&&(popup.classList.remove("modal-show"),popup.classList.remove("modal-error")))});
