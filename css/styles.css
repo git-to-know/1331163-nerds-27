@@ -812,7 +812,7 @@ a {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  padding-bottom: 43px;
+  padding-bottom: 41px;
   margin: 0;
 }
 
@@ -1443,7 +1443,7 @@ input[type="radio"].visually-hidden {
 
 .page:hover,
 .page:focus {
-  border-color: #dfdfdf;
+  background-color: #dfdfdf;
 }
 
 .page:active {
